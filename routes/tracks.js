@@ -91,7 +91,7 @@ router.patch('/tracks/:id', (req, res, next) => {
     })
     .then((tracks) => {
       res.send(tracks[0]);
-    });
+    })
     .catch((err) => {
       next(err);
     });

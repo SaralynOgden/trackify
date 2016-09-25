@@ -83,7 +83,7 @@ router.delete('/artists/:id', (req, res, next) => {
     .then(() => {
       delete artist.id;
       res.send(artist);
-    });
+    })
     .catch((err) => {
       next(err);
     });
